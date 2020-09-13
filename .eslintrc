@@ -1,0 +1,76 @@
+{
+  "root": true,
+  "parser": "@typescript-eslint/parser",
+  "parserOptions": {
+    "tsconfigRootDir": ".",
+    "project": "tsconfig.json",
+    "sourceType": "module",
+    "ecmaVersion": 2018
+  },
+  "plugins": ["@typescript-eslint", "sonarjs"],
+  "extends": [
+    /*"eslint:recommended",
+    "airbnb-typescript/base",
+    "plugin:sonarjs/recommended",
+    "plugin:@typescript-eslint/recommended",
+    "plugin:@typescript-eslint/recommended-requiring-type-checking"*/
+  ],
+  "rules": {
+   /** "class-methods-use-this": "off",
+    // https://github.com/typescript-eslint/typescript-eslint/issues/1277
+    "consistent-return": "off",
+    "func-names": "off",
+    "max-len": ["warn", { "code": 140, "ignoreTemplateLiterals": true }],
+    "newline-per-chained-call": "off",
+    "no-continue": "off",
+    // https://github.com/airbnb/javascript/issues/1342
+    "no-param-reassign": ["warn", { "props": false }],
+    // https://github.com/airbnb/javascript/issues/1271
+    // https://github.com/airbnb/javascript/blob/master/packages/eslint-config-airbnb-base/rules/style.js#L334-L352
+    "no-restricted-syntax": ["warn", "ForInStatement", "LabeledStatement", "WithStatement"],
+    "no-underscore-dangle": ["warn", { "allow": ["_id"] }],
+    "no-void": ["warn", { "allowAsStatement": true }],
+    "object-curly-newline": "off",
+    "spaced-comment": ["warn", "always", { "line": { "markers": ["/", "#region", "#endregion"] } }],
+
+    // Change eslint rule to @typescript-eslint rule
+    "lines-between-class-members": "off",
+    "no-return-await": "off",
+    "no-unused-expressions": "off",
+
+    // https://github.com/benmosher/eslint-plugin-import/issues/1453
+    "import/no-cycle": "off",
+    // "import/no-default-export": "warn",
+    "import/prefer-default-export": "off",
+
+    "@typescript-eslint/consistent-type-assertions": ["warn", { "assertionStyle": "angle-bracket" }],
+    "@typescript-eslint/explicit-function-return-type": "warn",
+    "@typescript-eslint/explicit-member-accessibility": ["warn", { "overrides": { "constructors": "no-public" } }],
+    // https://github.com/typescript-eslint/typescript-eslint/issues/977
+    "@typescript-eslint/lines-between-class-members": "off",
+    "@typescript-eslint/member-ordering": "warn",
+    "@typescript-eslint/naming-convention": ["warn",
+      { "selector": "default", "format": ["strictCamelCase"] },
+      { "selector": "variable", "format": ["camelCase", "PascalCase", "UPPER_CASE"] },
+      { "selector": "property", "format": null, "leadingUnderscore": "allow" },
+      { "selector": "typeLike", "format": ["StrictPascalCase"] },
+      { "selector": "enumMember", "format": ["UPPER_CASE"] }],
+    "@typescript-eslint/no-floating-promises": ["warn", { "ignoreIIFE": true, "ignoreVoid": true }],
+    // https://github.com/typescript-eslint/typescript-eslint/issues/902
+    "@typescript-eslint/no-inferrable-types": ["warn", { "ignoreParameters": true, "ignoreProperties": true }],
+    "@typescript-eslint/no-misused-promises": ["warn", { "checksVoidReturn": false }],
+    "@typescript-eslint/no-unnecessary-boolean-literal-compare": "warn",
+    "@typescript-eslint/no-unsafe-assignment": "off",
+    "@typescript-eslint/no-unsafe-call": "off",
+    "@typescript-eslint/no-unsafe-member-access": "off",
+    "@typescript-eslint/no-unused-expressions": "warn",
+    "@typescript-eslint/prefer-includes": "off",
+    "@typescript-eslint/prefer-optional-chain": "warn",
+    "@typescript-eslint/restrict-template-expressions": "off",
+    "@typescript-eslint/return-await": "warn",
+    "@typescript-eslint/typedef": "warn",
+    "@typescript-eslint/unbound-method": ["warn", { "ignoreStatic": true }],
+
+    "sonarjs/no-duplicate-string": "off"*/
+  }
+}
